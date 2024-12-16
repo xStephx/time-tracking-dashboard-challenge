@@ -18,14 +18,153 @@
   <title>Frontend Mentor | Time tracking dashboard</title>
 </head>
 
-<body>
+<body class="bg-VeryDarkBlue font-Rubik min-h-screen flex flex-col justify-center items-center">
+  <main class="container flex justify-center items-center">
+    <aside class="bg-DarkBlue rounded-lg w-[250px] mr-8">
+      <div class="bg-Blue rounded-lg p-8">
+        <img src="assets/images/image-jeremy.png" alt="Jeremy Image" class="w-[90px] rounded-full border-white border-[3px] mb-9">
+        <span class="text-DesaturatedBlue">
+          Report for
+        </span>
+        <h1 class="text-PaleBlue text-4xl font-light mt-3 mb-12">
+          Jeremy Robson
+        </h1>
+      </div>
+      <div class="bg-DarkBlue flex md:flex-col flex-row rounded-b-lg p-8">
+        <button class="text-DesaturatedBlue hover:text-PaleBlue text-left mb-4">Daily</button>
+        <button class="text-PaleBlue hover:text-PaleBlue text-left mb-4">Weekly</button>
+        <button class="text-DesaturatedBlue hover:text-PaleBlue text-left">Monthly</button>
+      </div>
+    </aside>
+    <section class="grid grid-cols-3 gap-8">
+      <div class="bg-LightRedWork w-[250px] rounded-lg">
+        <div class="bg-LightRedWork flex justify-end rounded-lg mb-[-20px] px-3">
+          <img src="assets/images/icon-work.svg" alt="Work Icon" class="z-10 relative">
+        </div>
+        <div class="bg-DarkBlue hover:bg-[rgb(52,57,123)] rounded-lg p-7 z-20 relative">
+          <div class="flex justify-between items-center">
+            <span class="text-PaleBlue text-lg">Work</span>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer hover:fill-PaleBlue">
+              <path 
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+                fill="#BBC0FF" 
+                fill-rule="evenodd"
+                class="hover:fill-PaleBlue"
+              />
+            </svg>
+          </div>
+          <p class="text-5xl text-PaleBlue font-light mt-7">32hrs</p>
+          <p class="text-DesaturatedBlue mt-2">Last Week - 36hrs</p>
+        </div>
+      </div>
 
-  Report for
-  Jeremy Robson
+      <div class="bg-SoftBluePlay w-[250px] rounded-lg">
+        <div class="bg-SoftBluePlay flex justify-end rounded-lg mb-[-18px] px-3">
+          <img src="assets/images/icon-play.svg" alt="Work Icon" class="z-10 relative">
+        </div>
+        <div class="bg-DarkBlue hover:bg-[rgb(52,57,123)] rounded-lg p-7 z-20 relative">
+          <div class="flex justify-between items-center">
+            <span class="text-PaleBlue text-lg">Work</span>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer hover:fill-PaleBlue">
+              <path 
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+                fill="#BBC0FF" 
+                fill-rule="evenodd"
+                class="hover:fill-PaleBlue"
+              />
+            </svg>
+          </div>
+          <p class="text-5xl text-PaleBlue font-light mt-7">32hrs</p>
+          <p class="text-DesaturatedBlue mt-2">Last Week - 36hrs</p>
+        </div>
+      </div>
 
-  Daily
-  Weekly
-  Monthly
+      <div class="bg-LightRedStudy w-[250px] rounded-lg">
+        <div class="bg-LightRedStudy flex justify-end rounded-lg mb-[-20px] px-3">
+          <img src="assets/images/icon-study.svg" alt="Work Icon" class="z-10 relative">
+        </div>
+        <div class="bg-DarkBlue hover:bg-[rgb(52,57,123)] rounded-lg p-7 z-20 relative">
+          <div class="flex justify-between items-center">
+            <span class="text-PaleBlue text-lg">Work</span>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer hover:fill-PaleBlue">
+              <path 
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+                fill="#BBC0FF" 
+                fill-rule="evenodd"
+                class="hover:fill-PaleBlue"
+              />
+            </svg>
+          </div>
+          <p class="text-5xl text-PaleBlue font-light mt-7">32hrs</p>
+          <p class="text-DesaturatedBlue mt-2">Last Week - 36hrs</p>
+        </div>
+      </div>
+
+      <div class="bg-LimeGreenExercise w-[250px] rounded-lg">
+        <div class="bg-LimeGreenExercise flex justify-end rounded-lg mb-[-5px] px-3">
+          <img src="assets/images/icon-exercise.svg" alt="Work Icon" class="z-10 relative">
+        </div>
+        <div class="bg-DarkBlue hover:bg-[rgb(52,57,123)] rounded-lg p-7 z-20 relative">
+          <div class="flex justify-between items-center">
+            <span class="text-PaleBlue text-lg">Work</span>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer hover:fill-PaleBlue">
+              <path 
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+                fill="#BBC0FF" 
+                fill-rule="evenodd"
+                class="hover:fill-PaleBlue"
+              />
+            </svg>
+          </div>
+          <p class="text-5xl text-PaleBlue font-light mt-7">32hrs</p>
+          <p class="text-DesaturatedBlue mt-2">Last Week - 36hrs</p>
+        </div>
+      </div>
+
+      <div class="bg-VioletSocial w-[250px] rounded-lg">
+        <div class="bg-VioletSocial flex justify-end rounded-lg mb-[-50px] px-3">
+          <img src="assets/images/icon-social.svg" alt="Work Icon" class="z-10 relative">
+        </div>
+        <div class="bg-DarkBlue hover:bg-[rgb(52,57,123)] rounded-lg p-7 z-20 relative">
+          <div class="flex justify-between items-center">
+            <span class="text-PaleBlue text-lg">Work</span>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer hover:fill-PaleBlue">
+              <path 
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+                fill="#BBC0FF" 
+                fill-rule="evenodd"
+                class="hover:fill-PaleBlue"
+              />
+            </svg>
+          </div>
+          <p class="text-5xl text-PaleBlue font-light mt-7">32hrs</p>
+          <p class="text-DesaturatedBlue mt-2">Last Week - 36hrs</p>
+        </div>
+      </div>
+      
+      <div class="bg-SoftOrangeSelfCare w-[250px] rounded-lg">
+        <div class="bg-SoftOrangeSelfCare flex justify-end rounded-lg mb-[-17px] px-3">
+          <img src="assets/images/icon-self-care.svg" alt="Work Icon" class="z-10 relative">
+        </div>
+        <div class="bg-DarkBlue hover:bg-[rgb(52,57,123)] rounded-lg p-7 z-20 relative">
+          <div class="flex justify-between items-center">
+            <span class="text-PaleBlue text-lg">Work</span>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer hover:fill-PaleBlue">
+              <path 
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+                fill="#BBC0FF" 
+                fill-rule="evenodd"
+                class="hover:fill-PaleBlue"
+              />
+            </svg>
+          </div>
+          <p class="text-5xl text-PaleBlue font-light mt-7">32hrs</p>
+          <p class="text-DesaturatedBlue mt-2">Last Week - 36hrs</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
 
   Work
   5hrs <!-- daily -->
@@ -74,7 +213,6 @@
   Previous - 2hrs <!-- weekly -->
   7hrs <!-- monthly -->
   Previous - 11hrs <!-- monthly -->
-
   <!-- Custom JS -->
   <script src="assets/js/script.js"></script>
 </body>
