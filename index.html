@@ -19,26 +19,32 @@
 </head>
 
 <body class="bg-VeryDarkBlue font-Rubik min-h-screen flex flex-col justify-center items-center">
+  
   <main class="container flex lg:flex-row flex-col justify-center items-center p-4">
-    <aside class="bg-DarkBlue rounded-lg lg:w-[250px] md:w-[530px] lg:mr-8 lg:mb-0 md:mb-8">
-      <div class="bg-Blue rounded-lg p-8">
-        <img src="assets/images/image-jeremy.png" alt="Jeremy Image" class="w-[90px] rounded-full border-white border-[3px] lg:mb-9 mb-7">
-        <span class="text-DesaturatedBlue">
-          Report for
-        </span>
-        <h1 class="text-PaleBlue lg:text-4xl md:text-3xl font-light mt-3 lg:mb-12 md:mb-5">
-          Jeremy Robson
-        </h1>
+
+    <aside class="bg-DarkBlue rounded-lg lg:w-[250px] md:w-[530px] w-[250px] lg:mr-8 lg:mb-0 md:mb-8 mb-8">
+      <div class="bg-Blue flex lg:flex-col md:flex-col flex-row lg:items-start md:items-center items-center rounded-lg md:p-8 p-5">
+        <img src="assets/images/image-jeremy.png" alt="Jeremy Image" class="md:w-[90px] w-[70px] rounded-full border-white border-[3px] lg:mb-9 md:mb-3 lg:mr-0 md:mr-0 mr-3">
+        <div class="lg:text-left md:text-center">
+          <span class="text-DesaturatedBlue md:text-base text-xs">
+            Report for
+          </span>
+          <h1 class="text-PaleBlue lg:text-4xl md:text-3xl text-base font-light md:mt-2 lg:mb-12 md:mb-5">
+            Jeremy Robson
+          </h1>
+        </div>
       </div>
-      <div class="bg-DarkBlue flex lg:flex-col md:flex-row flex-row rounded-b-lg p-8 justify-center md:gap-4">
+      <div class="bg-DarkBlue flex lg:flex-col md:flex-row flex-row rounded-b-lg md:p-8 p-6 justify-center md:gap-4 gap-4">
         <button class="text-DesaturatedBlue hover:text-PaleBlue lg:text-left text-center lg:mb-2">Daily</button>
         <button class="text-PaleBlue hover:text-PaleBlue lg:text-left text-center lg:mb-2">Weekly</button>
         <button class="text-DesaturatedBlue hover:text-PaleBlue lg:text-left text-center">Monthly</button>
       </div>
     </aside>
+
     <section class="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+
       <div class="bg-LightRedWork w-[250px] rounded-lg">
-        <div class="bg-LightRedWork flex justify-end rounded-lg mb-[-20px] px-3">
+        <div class="bg-LightRedWork flex justify-end rounded-lg mb-[-16px] px-3">
           <img src="assets/images/icon-work.svg" alt="Work Icon" class="z-10 relative">
         </div>
         <div class="bg-DarkBlue hover:bg-[rgb(52,57,123)] hover:cursor-pointer rounded-lg p-7 z-20 relative">
@@ -53,13 +59,15 @@
               />
             </svg>
           </div>
-          <p class="text-5xl text-PaleBlue font-light mt-7">32hrs</p>
-          <p class="text-DesaturatedBlue mt-2">Last Week - 36hrs</p>
+          <div class="flex md:flex-col flex-row md:justify-center md:items-start justify-between items-center md:mt-0 mt-2">
+            <p class="md:text-5xl text-2xl text-PaleBlue font-light md:mt-7">32hrs</p>
+            <p class="text-DesaturatedBlue text-sm md:mt-2">Last Week - 36hrs</p>
+          </div>
         </div>
       </div>
 
       <div class="bg-SoftBluePlay w-[250px] rounded-lg">
-        <div class="bg-SoftBluePlay flex justify-end rounded-lg mb-[-18px] px-3">
+        <div class="bg-SoftBluePlay flex justify-end rounded-lg mb-[-14px] px-3">
           <img src="assets/images/icon-play.svg" alt="Play Icon" class="z-10 relative">
         </div>
         <div class="bg-DarkBlue hover:bg-[rgb(52,57,123)] hover:cursor-pointer rounded-lg p-7 z-20 relative">
@@ -74,13 +82,15 @@
               />
             </svg>
           </div>
-          <p class="text-5xl text-PaleBlue font-light mt-7">32hrs</p>
-          <p class="text-DesaturatedBlue mt-2">Last Week - 36hrs</p>
+          <div class="flex md:flex-col flex-row md:justify-center md:items-start justify-between items-center md:mt-0 mt-2">
+            <p class="md:text-5xl text-2xl text-PaleBlue font-light md:mt-7">32hrs</p>
+            <p class="text-DesaturatedBlue text-sm md:mt-2">Last Week - 36hrs</p>
+          </div>
         </div>
       </div>
 
       <div class="bg-LightRedStudy w-[250px] rounded-lg">
-        <div class="bg-LightRedStudy flex justify-end rounded-lg lg:mb-[-20px] md:mb-[-19px] px-3">
+        <div class="bg-LightRedStudy flex justify-end rounded-lg lg:mb-[-16px] md:mb-[-19px] px-3">
           <img src="assets/images/icon-study.svg" alt="Study Icon" class="z-10 relative">
         </div>
         <div class="bg-DarkBlue hover:bg-[rgb(52,57,123)] hover:cursor-pointer rounded-lg p-7 z-20 relative">
@@ -95,8 +105,10 @@
               />
             </svg>
           </div>
-          <p class="text-5xl text-PaleBlue font-light mt-7">32hrs</p>
-          <p class="text-DesaturatedBlue mt-2">Last Week - 36hrs</p>
+          <div class="flex md:flex-col flex-row md:justify-center md:items-start justify-between items-center md:mt-0 mt-2">
+            <p class="md:text-5xl text-2xl text-PaleBlue font-light md:mt-7">32hrs</p>
+            <p class="text-DesaturatedBlue text-sm md:mt-2">Last Week - 36hrs</p>
+          </div>
         </div>
       </div>
 
@@ -116,8 +128,10 @@
               />
             </svg>
           </div>
-          <p class="text-5xl text-PaleBlue font-light mt-7">32hrs</p>
-          <p class="text-DesaturatedBlue mt-2">Last Week - 36hrs</p>
+          <div class="flex md:flex-col flex-row md:justify-center md:items-start justify-between items-center md:mt-0 mt-2">
+            <p class="md:text-5xl text-2xl text-PaleBlue font-light md:mt-7">32hrs</p>
+            <p class="text-DesaturatedBlue text-sm md:mt-2">Last Week - 36hrs</p>
+          </div>
         </div>
       </div>
 
@@ -137,8 +151,10 @@
               />
             </svg>
           </div>
-          <p class="text-5xl text-PaleBlue font-light mt-7">32hrs</p>
-          <p class="text-DesaturatedBlue mt-2">Last Week - 36hrs</p>
+          <div class="flex md:flex-col flex-row md:justify-center md:items-start justify-between items-center md:mt-0 mt-2">
+            <p class="md:text-5xl text-2xl text-PaleBlue font-light md:mt-7">32hrs</p>
+            <p class="text-DesaturatedBlue text-sm md:mt-2">Last Week - 36hrs</p>
+          </div>
         </div>
       </div>
       
@@ -158,13 +174,14 @@
               />
             </svg>
           </div>
-          <p class="text-5xl text-PaleBlue font-light mt-7">32hrs</p>
-          <p class="text-DesaturatedBlue mt-2">Last Week - 36hrs</p>
+          <div class="flex md:flex-col flex-row md:justify-center md:items-start justify-between items-center md:mt-0 mt-2">
+            <p class="md:text-5xl text-2xl text-PaleBlue font-light md:mt-7">32hrs</p>
+            <p class="text-DesaturatedBlue text-sm md:mt-2">Last Week - 36hrs</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  
 
   Work
   5hrs <!-- daily -->
