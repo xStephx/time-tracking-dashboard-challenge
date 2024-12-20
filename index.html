@@ -35,9 +35,9 @@
         </div>
       </div>
       <div class="bg-DarkBlue flex lg:flex-col md:flex-row flex-row rounded-b-lg md:p-8 p-6 justify-center md:gap-4 gap-4">
-        <button class="text-DesaturatedBlue hover:text-PaleBlue lg:text-left text-center lg:mb-2">Daily</button>
-        <button class="text-PaleBlue hover:text-PaleBlue lg:text-left text-center lg:mb-2">Weekly</button>
-        <button class="text-DesaturatedBlue hover:text-PaleBlue lg:text-left text-center">Monthly</button>
+        <button class="timeframe-button text-DesaturatedBlue hover:text-PaleBlue lg:text-left text-center lg:mb-2" data-view="daily">Daily</button>
+        <button class="timeframe-button text-PaleBlue hover:text-PaleBlue lg:text-left text-center lg:mb-2" data-view="weekly">Weekly</button>
+        <button class="timeframe-button text-DesaturatedBlue hover:text-PaleBlue lg:text-left text-center" data-view="monthly">Monthly</button>
       </div>
     </aside>
 
@@ -60,8 +60,8 @@
             </svg>
           </div>
           <div class="flex md:flex-col flex-row md:justify-center md:items-start justify-between items-center md:mt-0 mt-2">
-            <p class="md:text-5xl text-2xl text-PaleBlue font-light md:mt-7">32hrs</p>
-            <p class="text-DesaturatedBlue text-sm md:mt-2">Last Week - 36hrs</p>
+            <p id="work-current" class="md:text-5xl text-2xl text-PaleBlue font-light md:mt-7">32hrs</p>
+            <p id="work-previous" class="text-DesaturatedBlue text-sm md:mt-2">Last Week - 36hrs</p>
           </div>
         </div>
       </div>
@@ -83,8 +83,8 @@
             </svg>
           </div>
           <div class="flex md:flex-col flex-row md:justify-center md:items-start justify-between items-center md:mt-0 mt-2">
-            <p class="md:text-5xl text-2xl text-PaleBlue font-light md:mt-7">32hrs</p>
-            <p class="text-DesaturatedBlue text-sm md:mt-2">Last Week - 36hrs</p>
+            <p id="play-current" class="md:text-5xl text-2xl text-PaleBlue font-light md:mt-7">32hrs</p>
+            <p id="play-previous" class="text-DesaturatedBlue text-sm md:mt-2">Last Week - 36hrs</p>
           </div>
         </div>
       </div>
@@ -106,8 +106,8 @@
             </svg>
           </div>
           <div class="flex md:flex-col flex-row md:justify-center md:items-start justify-between items-center md:mt-0 mt-2">
-            <p class="md:text-5xl text-2xl text-PaleBlue font-light md:mt-7">32hrs</p>
-            <p class="text-DesaturatedBlue text-sm md:mt-2">Last Week - 36hrs</p>
+            <p id="study-current" class="md:text-5xl text-2xl text-PaleBlue font-light md:mt-7">32hrs</p>
+            <p id="study-previous" class="text-DesaturatedBlue text-sm md:mt-2">Last Week - 36hrs</p>
           </div>
         </div>
       </div>
@@ -129,8 +129,8 @@
             </svg>
           </div>
           <div class="flex md:flex-col flex-row md:justify-center md:items-start justify-between items-center md:mt-0 mt-2">
-            <p class="md:text-5xl text-2xl text-PaleBlue font-light md:mt-7">32hrs</p>
-            <p class="text-DesaturatedBlue text-sm md:mt-2">Last Week - 36hrs</p>
+            <p id="exercise-current" class="md:text-5xl text-2xl text-PaleBlue font-light md:mt-7">32hrs</p>
+            <p id="exercise-previous" class="text-DesaturatedBlue text-sm md:mt-2">Last Week - 36hrs</p>
           </div>
         </div>
       </div>
@@ -152,8 +152,8 @@
             </svg>
           </div>
           <div class="flex md:flex-col flex-row md:justify-center md:items-start justify-between items-center md:mt-0 mt-2">
-            <p class="md:text-5xl text-2xl text-PaleBlue font-light md:mt-7">32hrs</p>
-            <p class="text-DesaturatedBlue text-sm md:mt-2">Last Week - 36hrs</p>
+            <p id="social-current" class="md:text-5xl text-2xl text-PaleBlue font-light md:mt-7">32hrs</p>
+            <p id="social-previous" class="text-DesaturatedBlue text-sm md:mt-2">Last Week - 36hrs</p>
           </div>
         </div>
       </div>
@@ -175,61 +175,13 @@
             </svg>
           </div>
           <div class="flex md:flex-col flex-row md:justify-center md:items-start justify-between items-center md:mt-0 mt-2">
-            <p class="md:text-5xl text-2xl text-PaleBlue font-light md:mt-7">32hrs</p>
-            <p class="text-DesaturatedBlue text-sm md:mt-2">Last Week - 36hrs</p>
+            <p id="self-care-current" class="md:text-5xl text-2xl text-PaleBlue font-light md:mt-7">32hrs</p>
+            <p id="self-care-previous" class="text-DesaturatedBlue text-sm md:mt-2">Last Week - 36hrs</p>
           </div>
         </div>
       </div>
     </section>
   </main>
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
   <!-- Custom JS -->
   <script src="assets/js/script.js"></script>
 </body>
