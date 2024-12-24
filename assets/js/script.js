@@ -1,13 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Fetch JSON data and initialize the functionality
     fetch('./assets/js/data.json')
         .then(response => response.json())
         .then(data => {
             const buttons = document.querySelectorAll('.timeframe-button');
             const defaultButton = document.querySelector('[data-view="weekly"]');
+            // Set the default active button
             if (defaultButton) {
                 setActiveButton(defaultButton);
             }
-
+            // Add click event listeners to all buttons
             buttons.forEach(button => {
                 button.addEventListener('click', function () {
                     const selectedView = button.getAttribute('data-view');
@@ -17,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             updateData('weekly', data);
         });
-
+    // Update DOM elements with new data based on the selected view
     function updateData(view, data) {
         data.forEach(item => {
             const title = item.title.toLowerCase().replace(' ', '-');
@@ -33,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
+    // Update button styles to indicate the active state
     function setActiveButton(clickedButton) {
         const buttons = document.querySelectorAll('.timeframe-button');
         buttons.forEach(button => {
